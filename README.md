@@ -196,8 +196,6 @@ Setup experiment tracking:
 
 ### Key Ablation Results
 
-![Ablation Results](research/papers/visualisations/16.png)
-
 **N-tuple Size Analysis:**
 - Optimal performance at N=5 for CIFAR-10
 - Diminishing returns beyond N=7
