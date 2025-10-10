@@ -1,9 +1,5 @@
 # PAC-Bayes ReID: Risk Bounds for Metric Learning
 
-A comprehensive experimental framework implementing PAC-Bayes N-tuple metric learning for person re-identification, providing both theoretical guarantees and empirical performance improvements over traditional methods.
-
-## Overview
-
 This repository implements the PAC-Bayes framework for N-tuple metric learning in person re-identification (ReID) tasks. Unlike traditional deterministic approaches, our method provides **theoretical generalization guarantees** while achieving competitive performance on standard benchmarks.
 
 The PAC-Bayes bound for N-tuple metric learning:
