@@ -98,14 +98,14 @@ Our probabilistic networks parameterize weight distributions:
 
 ![Stochastic Networks](research/papers/visualisations/11.png)
 
+## Configuration System
+
 ```python
 # Weight parameterization
 μ_w ~ N(0, σ_prior²)  # Prior mean
 σ_w ~ Fixed           # Prior variance
 w ~ N(μ_w, σ_w²)      # Weight samples
 ```
-
-## Configuration System
 
 ### Single Source of Truth
 All experiment parameters are defined in `configs/config.yaml`:
