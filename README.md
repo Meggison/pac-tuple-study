@@ -6,6 +6,17 @@ A comprehensive experimental framework implementing PAC-Bayes N-tuple metric lea
 
 This repository implements the PAC-Bayes framework for N-tuple metric learning in person re-identification (ReID) tasks. Unlike traditional deterministic approaches, our method provides **theoretical generalization guarantees** while achieving competitive performance on standard benchmarks.
 
+The PAC-Bayes bound for N-tuple metric learning:
+
+$$P(R(\rho) \leq \hat{R}(\rho) + \sqrt{\frac{D_{KL}(\rho || \pi) + \ln(\frac{2\sqrt{m}}{\delta})}{2(m-1)}}) \geq 1-\delta$$
+
+Where:
+- $R(\rho)$ is the true risk under posterior $\rho$
+- $\hat{R}(\rho)$ is the empirical risk  
+- $D_{KL}(\rho || \pi)$ is the KL divergence between posterior and prior
+- $m$ is the training set size
+- $\delta$ is the confidence parameter
+
 ### Key Contributions
 
 - **Theoretical Foundation**: PAC-Bayes bounds providing high-probability generalization guarantees
@@ -77,16 +88,6 @@ Our approach builds upon PAC-Bayes theory to provide generalization bounds for m
 
 ![PAC-Bayes Theory](research/papers/visualisations/17.png)
 
-The PAC-Bayes bound for N-tuple metric learning:
-
-$$P(R(\rho) \leq \hat{R}(\rho) + \sqrt{\frac{D_{KL}(\rho || \pi) + \ln(\frac{2\sqrt{m}}{\delta})}{2(m-1)}}) \geq 1-\delta$$
-
-Where:
-- $R(\rho)$ is the true risk under posterior $\rho$
-- $\hat{R}(\rho)$ is the empirical risk  
-- $D_{KL}(\rho || \pi)$ is the KL divergence between posterior and prior
-- $m$ is the training set size
-- $\delta$ is the confidence parameter
 
 ### N-Tuple Learning Architecture
 
